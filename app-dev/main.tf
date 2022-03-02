@@ -1,6 +1,10 @@
 #====================================================================
 #=================== RESOURCE GROUP =================================
 #====================================================================
+provicder "azurerm" { 
+  features {}
+}
+
 resource "azurerm_resource_group" "module" {
   name     = "${var.name}-rg"
   location = "${var.location}"
